@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::selection { 
+	background-color: #F3E2E1; 
+	color: black;
+}
+
+body {
+	background-image: url(https://i.pinimg.com/originals/19/6a/d9/196ad9d3122098b297d7b99ce9ff209f.gif);
+    background-position: center;
+    background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+.table {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 140px;
+	justify-content: center;
+    align-items: center;
+}
+
+td {
+	text-align: center;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tr {
+	margin-bottom: 20px;
+	align: center;
+}
+
+.text {
+	color: white;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+	color: white;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 0px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+.image-cropper {
+    display:block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+img {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.btn-9 {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.btn-9:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #ec8db0 74%);
+  transition: all 0.3s ease;
+}
+.btn-9:hover {
+  background: transparent;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+}
+.btn-9:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+button {
+  margin: 10px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Bookman', serif;
+  font-size: 18px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+.content {
+    display: none;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#challenge {
+	width: 220px;
+	height: 220px;
+}
+
+#challengeend {
+	width: 220px;
+	height: 220px;
+	padding-bottom: 40px;
+}
+
+.monthly {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.season {
+	padding-top: 20px;
+}
+
+.community {
+	padding-bottom: 50px;
+}
+
+#community {
+	width: 140px;
+	height: auto;
+}
+
+#progressbtn {
+	width: 250px;
+	height: 40px;
+}
+
+.progressbtn {
+	margin-bottom: 40px;
+}
+
+#challengep {
+	height: auto;
+    width: 110%;
+	-webkit-filter: none;
+    filter: none;
+}
+
+#mydiv {
+	height: auto;
+	width: auto;
+	margin-right: -1%
+	float: left;
+	overflow: auto;
+}
+
+#left {
+	float: left;
+}
+
+.table2 {
+	text-align: left;
+	border-collapse: collapse;
+	color: #FFFFFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 600;
+	padding: 20px;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+th{
+	font-weight: bolder;
+	font-size: 17px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: left;
+}
+
+
+a {
+	color: #37C9F0
+}
+
+h3 {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	text-shadow:
+	-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	margin-top: 0px;
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+.genre img{
+	width: 31.333%;
+}
+
+.genre {
+	align-items: center;
+	table-layout: fixed;
+	width: 100%;
+	table-cell
+	margin-left: auto;
+	margin-right: auto;
+	margin:0 auto;
+}
+
+.centerboi {
+	width: 101px;
+}
+
+.centerboii {
+	width: 121px;
+	margin: 5px;
+}
+
+.oof {
+	margin-top: 50px;
+}
+
+.genre2{
+	padding-top: 50px;
+}
+
+.container {
+	align-items: center;
+	padding-top: 19px;
+}
+
+.extras {
+	width: 33%;
+	height: 50%;
+	margin: 0px 0px 50px 0px;
+	float: left;
+}
+
+#extra1 {
+	padding-left: 163px;
+}
+
+#extra2 {
+	padding-right: 140px;
+}
+
+.mastery {
+	align-items: center;
+	margin: 0px 0px 100px 0px;
+}
+
+.masteryi {
+	width: 70px;
+	opacity: 0.6;
+    transition: opacity 1.5s ease-out;
+    -moz-transition: opacity 1.5s ease-out;
+    -webkit-transition: opacity 1.5s ease-out;
+    -o-transition: opacity 1.5s ease-out;
+	filter: brightness(50%);
+}
+
+.centerboiii {
+	width: 100px;
+	margin: 10px;
+}
+
+.tags {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+
+.credits {
+	margin: 0px 0px 30px 0px;
+}
+
+#credits {
+	margin-bottom: 30px;
+}
+
+.commun {
+	margin-top: 5px;
+}
+
+.mangagenre {
+	align-items: center;
+	margin: 0px 0px 100px 0px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.averagesize {
+	width: 130px;
+	margin: 6px;
+}
+
+.unwatched {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.masteryi:hover { 
+  opacity: 1;
+  filter: brightness(70%);
+}
+
+#itsuki {
+	width: 145px
+}
+
+.divend {
+	margin-bottom: 100px;
+}
+
+.footerimg {
+	width: 50px;
+	margin: 10px;
+	opacity: 1;
+    transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+}
+
+.divends {
+	margin-bottom: 20px;
+}
+
+.footerimg:hover {
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(shorelines.otf);
+}
+
+.badgetext {
+	font-family: myFirstFont;
+	font-size: 20px;
+	color: #F7A7A7;
+	margin-bottom: 25px;
+	margin-top: 0px;
+}
+
+
+/* Changes scrollbar for whole page (Firefox)*/
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(68, 51, 55) rgba(31, 35, 45, 0.95);
+}
+
+/* Chrome scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #01232d;
+}
+
+::-webkit-scrollbar-corner {
+    background: #01232d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #954b93;
+    -webkit-border-radius: 1ex;
+}
