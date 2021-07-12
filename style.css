@@ -35,7 +35,8 @@ tr {
 	align: center;
 }
 
-.text {
+.text,
+h2 {
 	color: white;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
@@ -86,6 +87,7 @@ img {
       -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
+
 .btn-9:after {
   position: absolute;
   content: " ";
@@ -98,6 +100,7 @@ img {
 background-image: linear-gradient(315deg, #1fd1f9 0%, #ec8db0 74%);
   transition: all 0.3s ease;
 }
+
 .btn-9:hover {
   background: transparent;
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
@@ -106,6 +109,7 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #ec8db0 74%);
     inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
   color: #fff;
 }
+
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
@@ -118,6 +122,7 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #ec8db0 74%);
 button {
   margin: 10px;
 }
+
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -138,40 +143,29 @@ button {
   outline: none;
 }
 
-
 .content {
     display: none;
 	-webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-#challenge {
-	width: 220px;
-	height: 220px;
-}
-
-#challengeend {
-	width: 220px;
-	height: 220px;
+#genre table > tbody> tr > td{
 	padding-bottom: 40px;
 }
 
-.monthly {
-	padding-top: 20px;
+#genre table > tbody > tr:nth-child(5) > td {
+  padding: 0px !important;
+}
+
+.content2,
+#favorites div h2 {
 	padding-bottom: 20px;
 }
 
-.season {
-	padding-top: 20px;
-}
-
-.community {
-	padding-bottom: 50px;
-}
-
 #community {
-	width: 140px;
-	height: auto;
+    width: 120px;
+    height: auto;
+    margin: 0px 5px;
 }
 
 #progressbtn {
@@ -179,9 +173,19 @@ button {
 	height: 40px;
 }
 
-.progressbtn {
-	margin-bottom: 40px;
+.progressbtn,
+.wrapper,
+#TestsDiv,
+#TestsDiv2,
+#TestsDiv3{
+	margin-bottom: 40px
 }
+
+
+#milestones > div,
+#TestsDiv > div:first-child{
+	margin-bottom: 60px;
+} 
 
 #challengep {
 	height: auto;
@@ -244,11 +248,26 @@ h2 {
 	margin-bottom: 0px;
 }
 
-.genre img{
-	width: 31.333%;
+#genre table img, 
+#genre div:nth-child(4) div img,
+#genre div:nth-child(6) div img {
+    width: 29.333%;
+    padding: 1px;
 }
 
-.genre {
+#genre table img, 
+#genre div:nth-child(4) div img,
+#genre div:nth-child(6) div img,
+#milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+8),
+#milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+5){
+    filter: brightness(0.3);
+}
+
+#genre div:nth-child(6) div img:first-child{
+  filter: brightness(1);
+}
+
+#genre table {
 	align-items: center;
 	table-layout: fixed;
 	width: 100%;
@@ -258,49 +277,43 @@ h2 {
 	margin:0 auto;
 }
 
-.centerboi {
-	width: 101px;
-}
 
-.centerboii {
-	width: 121px;
-	margin: 5px;
-}
-
-.oof {
-	margin-top: 50px;
-}
-
-.genre2{
+#genre div:nth-child(4) div h3,
+#TestsDiv3 div h3 {
 	padding-top: 50px;
 }
 
-.container {
-	align-items: center;
-	padding-top: 19px;
-}
-
-.extras {
+#genre div:nth-child(4) div {
 	width: 33%;
 	height: 50%;
 	margin: 0px 0px 50px 0px;
 	float: left;
 }
 
-#extra1 {
+#genre div:nth-child(4) div:first-child {
 	padding-left: 163px;
 }
 
-#extra2 {
+#genre div:nth-child(4) div:nth-child(2) {
 	padding-right: 140px;
 }
 
-.mastery {
+#genre div:nth-child(6) div img,
+#milestones div:nth-child(3) div:nth-child(3) img,
+#milestones div:nth-child(5) div:nth-child(3) img{
+	width: 121px;
+	margin: 5px;
+}
+
+#genre div:nth-child(5) {
 	align-items: center;
 	margin: 0px 0px 100px 0px;
 }
 
-.masteryi {
+#genre div:nth-child(5) img,
+#milestones div:nth-child(2) div:nth-child(4) img,
+#milestones div:nth-child(4) div:nth-child(4) img
+ {
 	width: 70px;
 	opacity: 0.6;
     transition: opacity 1.5s ease-out;
@@ -310,60 +323,87 @@ h2 {
 	filter: brightness(50%);
 }
 
-.centerboiii {
+
+#genre div:nth-child(5) img:hover,
+#milestones div:nth-child(2) div:nth-child(4) img:hover,
+#milestones div:nth-child(4) div:nth-child(4) img:hover{ 
+  opacity: 1;
+  filter: brightness(70%);
+}
+
+#genre div:nth-child(7) div img {
 	width: 100px;
 	margin: 10px;
 }
 
-.tags {
+#genre div:nth-child(7) {
 	padding-left: 50px;
 	padding-right: 50px;
 	margin-bottom: 20px;
 }
 
-.credits {
-	margin: 0px 0px 30px 0px;
-}
-
+.credits,
+#TestsDiv3 > div > h2,
 #credits {
-	margin-bottom: 30px;
+	margin: 0px 0px 30px 0px;
 }
 
 .commun {
 	margin-top: 5px;
 }
 
-.mangagenre {
+.#genre div:nth-child(6) {
 	align-items: center;
 	margin: 0px 0px 100px 0px;
 	padding-left: 200px;
 	padding-right: 200px;
 }
 
-.averagesize {
+#completedgenre{
+	filter: none !important;
+}
+
+#favorites div:first-child div img,
+#events div:first-child div a img,
+#milestones div:first-child div img,
+#milestones div:nth-child(2) div:nth-child(3) img,
+#milestones div:nth-child(4) div:nth-child(3) img{
 	width: 130px;
 	margin: 6px;
 }
 
-.unwatched {
+#milestones div:nth-child(2) div:nth-child(4) {
 	padding-left: 150px;
 	padding-right: 150px;
 }
 
-.masteryi:hover { 
-  opacity: 1;
-  filter: brightness(70%);
+#favorites div div:nth-child(2) img:nth-child(3),
+#favorites div div:nth-child(3) img:nth-child(2),
+#favorites div div:nth-child(4) img:nth-child(2),
+#favorites div div:nth-child(6) img:nth-child(3),
+#favorites div div:nth-child(8) img:nth-child(2),
+#favorites div div:nth-child(9) img:nth-child(2),
+#favorites div div:nth-child(10) img:nth-child(3),
+#favorites div div:nth-child(11) img:nth-child(2),
+#favorites div div:nth-child(11) img:nth-child(3),
+#favorites div div:nth-child(12) img:nth-child(2),
+#favorites div div:nth-child(12) img:nth-child(3),
+#favorites div div:nth-child(13) img:nth-child(2),
+#favorites div div:nth-child(14) img:nth-child(2),
+#favorites div div:nth-child(15) img {
+	width: 145px !important;
 }
 
-#itsuki {
-	width: 145px
-}
-
-.divend {
+#genre div:nth-child(6),
+#events div div:nth-child(4),
+#events div div:nth-child(9),
+#favorites div div:nth-child(4),
+#favorites div div:nth-child(6),
+#favorites div div:nth-child(15) {
 	margin-bottom: 100px;
 }
 
-.footerimg {
+#footer img{
 	width: 50px;
 	margin: 10px;
 	opacity: 1;
@@ -373,11 +413,7 @@ h2 {
     -o-transition: opacity 0.5s ease-out;
 }
 
-.divends {
-	margin-bottom: 20px;
-}
-
-.footerimg:hover {
+#footer img:hover {
   opacity: 0.5;
 }
 
@@ -414,4 +450,124 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #954b93;
     -webkit-border-radius: 1ex;
+}
+
+#imgWrap .Active{
+    border:5px solid #58c;
+}
+
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+	color: pink;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: palevioletred;
+}
+.btn-10:hover:after {
+  background: white;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+	color: pink;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+.wrapper > button {
+  margin: 5px;
+  outline: none;
+}
+
+.wrapper > .custom-btn2 {
+  width: 120px;
+  height: 30px;
+  padding: 5.5px 25px;
+  border: 2px solid white;
+  font-family: 'Latp', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+h3 > a > img {
+	width: 20px;
+	height: 20px;
+}
+
+h3 > a > img,
+h2 > a > img {
+	vertical-align: text-top;
+	margin-left: 2px;
+	margin-right: 2px;
+	transition: all .4s ease-in-out;
+	border-radius: 100%;
+	background: #735564;
+}
+
+h2 > a > img {
+	width: 30px;
+	height: 30px;
+	background: white !important;
+}
+
+h3 > a > img:hover,
+h2 > a > img:hover {
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 8px rgb(255, 255, 255));
+}
+
+#TestsDiv > div > a > img,
+#community,
+#completedgenre,
+#genre div:nth-child(6) div img,
+#genre div:nth-child(5) div img,
+#genre div:nth-child(7) div img,
+#favorites div:first-child div img,
+#events div:first-child div a img,
+#milestones div:nth-child(2) div:nth-child(3) img,
+#milestones div:first-child div img,
+#milestones div:nth-child(3) div:nth-child(3) img,
+#milestones div:nth-child(4) div:nth-child(3) img,
+#milestones div:nth-child(5) div:nth-child(3) img{
+	transition: all .6s ease-in-out;
+}
+
+#TestsDiv > div > a > img:hover,
+#community:hover,
+#completedgenre:hover,
+#genre div:nth-child(6) div img:hover,
+#genre div:nth-child(5) div img:hover,
+#genre div:nth-child(7) div img:hover,
+#favorites div:first-child div img:hover,
+#events div:first-child div a img:hover,
+#milestones div:first-child div img:hover,
+#milestones div:nth-child(2) div:nth-child(3) img:hover,
+#milestones div:nth-child(3) div:nth-child(3) img:hover,
+#milestones div:nth-child(5) div:nth-child(3) img:hover,
+#milestones div:nth-child(4) div:nth-child(3) img:hover{
+	transform: scale(1.1);
+}
+
+
+#TestsDiv > div > a > img {
+	width: 220px;
+	height: 220px;
 }
