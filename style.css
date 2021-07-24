@@ -571,3 +571,41 @@ h2 > a > img:hover {
 	width: 220px;
 	height: 220px;
 }
+
+.container2:hover .image-cropper{
+	transform: scale(1.1);
+	
+}
+.container2:hover #photo{
+	filter: blur(4px);
+}
+
+#photo{
+	filter: blur(0px);
+	
+	transition: all .6s ease-in-out;
+}
+.image-cropper{
+	transition: all .6s ease-in-out;
+}
+
+.container2:hover #playbutton{
+    opacity: 1;
+}
+
+#playbutton{
+    opacity: 0;
+    width: 280px;
+  transition: .5s ease;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-top: 100px;
+	top: 0;
+    z-index: 110;
+}
+
+.container2{
+    width: 200px;
+    margin: auto;
+}
