@@ -30,7 +30,8 @@ td {
 	vertical-align: middle;
 }
 
-tr {
+tr,
+.progressbtn table{
 	margin-bottom: 20px;
 	align: center;
 }
@@ -395,8 +396,8 @@ h2 {
 }
 
 #genre div:nth-child(6),
-#events div div:nth-child(4),
-#events div div:nth-child(9),
+#events div div:nth-child(5),
+#events div div:nth-child(10),
 #favorites div div:nth-child(4),
 #favorites div div:nth-child(6),
 #favorites div div:nth-child(15) {
@@ -609,3 +610,22 @@ h2 > a > img:hover {
     width: 200px;
     margin: auto;
 }
+
+#awcpointsystem{
+    width:750px;
+    height:60px;
+    border:2px solid white; 
+    overflow:hidden;
+	margin: auto;
+	border-radius: 5px;
+
+}
+#awcpointsystem iframe {
+    transform: scale(0.6);
+    width:2000px;
+    height:750px;
+	top: 10px;
+    margin-left:-625px;
+    margin-top:-289px;   
+    border:0 solid;
+ }
