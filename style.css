@@ -256,8 +256,7 @@ h2 {
     padding: 1px;
 }
 
-#genre table img, 
-#genre div:nth-child(4) div img,
+#uncompleted,
 #genre div:nth-child(6) div img,
 #milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+8),
 #milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+5){
@@ -306,12 +305,6 @@ h2 {
 	margin: 5px;
 }
 
-#genre div:nth-child(5) {
-	align-items: center;
-	margin: 0px 0px 100px 0px;
-}
-
-#genre div:nth-child(5) img,
 #milestones div:nth-child(2) div:nth-child(4) img,
 #milestones div:nth-child(4) div:nth-child(4) img
  {
@@ -322,14 +315,6 @@ h2 {
     -webkit-transition: opacity 1.5s ease-out;
     -o-transition: opacity 1.5s ease-out;
 	filter: brightness(50%);
-}
-
-
-#genre div:nth-child(5) img:hover,
-#milestones div:nth-child(2) div:nth-child(4) img:hover,
-#milestones div:nth-child(4) div:nth-child(4) img:hover{ 
-  opacity: 1;
-  filter: brightness(70%);
 }
 
 #genre div:nth-child(7) div img {
@@ -360,8 +345,14 @@ h2 {
 	padding-right: 200px;
 }
 
-#completedgenre{
-	filter: none !important;
+#uncompleted,
+#genre div:nth-child(6) img:nth-child(n+2){
+	transition: none !important;
+}
+
+#uncompleted:hover,
+#genre div:nth-child(6) img:nth-child(n+2):hover{
+	transform: none !important;
 }
 
 #favorites div:first-child div img,
@@ -396,12 +387,17 @@ h2 {
 }
 
 #genre div:nth-child(6),
+#genre div:nth-child(4),
 #events div div:nth-child(5),
 #events div div:nth-child(10),
 #favorites div div:nth-child(4),
 #favorites div div:nth-child(6),
 #favorites div div:nth-child(15) {
 	margin-bottom: 100px;
+}
+
+#genre div:nth-child(4){
+height: 230px;
 }
 
 #footer img{
@@ -537,9 +533,9 @@ h2 > a > img:hover {
 
 #TestsDiv > div > a > img,
 #community,
-#completedgenre,
+#genre div:nth-child(4) img,
+#genre table img,
 #genre div:nth-child(6) div img,
-#genre div:nth-child(5) div img,
 #genre div:nth-child(7) div img,
 #favorites div:first-child div img,
 #events div:first-child div a img,
@@ -553,9 +549,9 @@ h2 > a > img:hover {
 
 #TestsDiv > div > a > img:hover,
 #community:hover,
-#completedgenre:hover,
+#genre div:nth-child(4) img:hover,
+#genre table img:hover,
 #genre div:nth-child(6) div img:hover,
-#genre div:nth-child(5) div img:hover,
 #genre div:nth-child(7) div img:hover,
 #favorites div:first-child div img:hover,
 #events div:first-child div a img:hover,
@@ -629,3 +625,12 @@ h2 > a > img:hover {
     margin-top:-289px;   
     border:0 solid;
  }
+ 
+#genre div{
+	display: block;
+}
+
+.challenger-stat-value {
+  border-left-color: #A95451;
+  border-right-color: #A95451;
+}
