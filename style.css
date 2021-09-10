@@ -163,7 +163,7 @@ button {
 	padding-bottom: 20px;
 }
 
-#community {
+#TestsDiv3 a:nth-child(n+2) img {
     width: 120px;
     height: auto;
     margin: 0px 5px;
@@ -532,7 +532,7 @@ h2 > a > img:hover {
 }
 
 #TestsDiv > div > a > img,
-#community,
+#TestsDiv3 a:nth-child(n+2) img,
 #genre div:nth-child(4) img,
 #genre table img,
 #genre div:nth-child(6) div img,
@@ -548,7 +548,7 @@ h2 > a > img:hover {
 }
 
 #TestsDiv > div > a > img:hover,
-#community:hover,
+#TestsDiv3 a:nth-child(n+2) img:hover,
 #genre div:nth-child(4) img:hover,
 #genre table img:hover,
 #genre div:nth-child(6) div img:hover,
@@ -624,13 +624,15 @@ h2 > a > img:hover {
     margin-left:-625px;
     margin-top:-289px;   
     border:0 solid;
+    filter: hue-rotate(159deg) contrast(0.8);
  }
  
 #genre div{
 	display: block;
 }
 
-.challenger-stat-value {
-  border-left-color: #A95451;
-  border-right-color: #A95451;
+#notfound {
+    width: 600px;
+    margin-bottom: -100px;
+    margin-top: -50px;
 }
