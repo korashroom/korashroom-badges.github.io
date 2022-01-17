@@ -258,7 +258,7 @@ h2 {
 
 #uncompleted,
 #genre div:nth-child(6) div img,
-#milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+8),
+#milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+9),
 #milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+5){
     filter: brightness(0.3);
 }
