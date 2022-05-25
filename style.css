@@ -259,7 +259,7 @@ h2 {
 #uncompleted,
 #genre div:nth-child(6) div img,
 #milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+9),
-#milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+5){
+#milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+6){
     filter: brightness(0.3);
 }
 
@@ -298,11 +298,25 @@ h2 {
 	padding-right: 140px;
 }
 
-#genre div:nth-child(6) div img,
-#milestones div:nth-child(3) div:nth-child(3) img,
-#milestones div:nth-child(5) div:nth-child(3) img{
+#genre div:nth-child(6) div img{
 	width: 121px;
 	margin: 5px;
+}
+
+#TestsDiv2 > div:first-of-type > a > img{
+	width: 171px;
+	margin: 5px;
+}
+
+#TestsDiv2 > div:nth-of-type(2) > a > img{
+	width: 151px;
+	margin: 10px;
+}
+
+#milestones div:nth-child(5) div:nth-child(3) img,
+#milestones div:nth-child(3) div:nth-child(3) img{
+    width: 110px;
+    margin: 5px;
 }
 
 #milestones div:nth-child(2) div:nth-child(4) img,
@@ -379,7 +393,6 @@ h2 {
 #favorites div div:nth-child(11) img:nth-child(2),
 #favorites div div:nth-child(11) img:nth-child(3),
 #favorites div div:nth-child(12) img:nth-child(2),
-#favorites div div:nth-child(12) img:nth-child(3),
 #favorites div div:nth-child(13) img:nth-child(2),
 #favorites div div:nth-child(14) img:nth-child(2),
 #favorites div div:nth-child(15) img {
@@ -392,7 +405,8 @@ h2 {
 #events div div:nth-child(10),
 #favorites div div:nth-child(4),
 #favorites div div:nth-child(6),
-#favorites div div:nth-child(15) {
+#favorites div div:nth-child(15),
+#TestsDiv2 > div {
 	margin-bottom: 100px;
 }
 
@@ -532,6 +546,7 @@ h2 > a > img:hover {
 }
 
 #TestsDiv > div > a > img,
+#TestsDiv2 a:nth-child(n+2) img,
 #TestsDiv3 a:nth-child(n+2) img,
 #genre div:nth-child(4) img,
 #genre table img,
@@ -559,14 +574,36 @@ h2 > a > img:hover {
 #milestones div:nth-child(2) div:nth-child(3) img:hover,
 #milestones div:nth-child(3) div:nth-child(3) img:hover,
 #milestones div:nth-child(5) div:nth-child(3) img:hover,
-#milestones div:nth-child(4) div:nth-child(3) img:hover{
+#milestones div:nth-child(4) div:nth-child(3) img:hover,
+#TestsDiv2 > div > a > img:hover{
 	transform: scale(1.1);
 }
 
+#milestones div:nth-child(3) div:nth-child(3) img:hover:nth-child(n+9),
+#milestones div:nth-child(5) div:nth-child(3) img:hover:nth-child(n+6){
+    transform: none;
+}
 
-#TestsDiv > div > a > img {
+#milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+9),
+#milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+6){
+    opacity: 0.6;
+}
+
+
+#TestsDiv > div > a > img{
 	width: 220px;
 	height: 220px;
+}
+
+#TestsDiv2 > div:nth-of-type(2) > a:nth-child(n+12) > img{
+	width: 190px;
+	height: 190px;
+    margin: -1px;
+}
+
+#TestsDiv2 > div:nth-of-type(1) > a:nth-child(4) > img{
+	width: 250px;
+	height: 250px;
 }
 
 .container2:hover .image-cropper{
@@ -624,7 +661,7 @@ h2 > a > img:hover {
     margin-left:-625px;
     margin-top:-289px;   
     border:0 solid;
-    filter: hue-rotate(159deg) contrast(0.8);
+    filter: hue-rotate(-80deg) contrast(0.8);
  }
  
 #genre div{
