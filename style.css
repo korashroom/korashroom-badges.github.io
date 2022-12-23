@@ -263,7 +263,7 @@ h2 {
     filter: brightness(0.3);
 }
 
-#genre div:nth-child(6) div img:first-child{
+#completed{
   filter: brightness(1);
 }
 
@@ -294,10 +294,6 @@ h2 {
 	padding-left: 163px;
 }
 
-#genre div:nth-child(4) div:nth-child(2) {
-	padding-right: 140px;
-}
-
 #genre div:nth-child(6) div img{
 	width: 121px;
 	margin: 5px;
@@ -308,10 +304,16 @@ h2 {
 	margin: 5px;
 }
 
-#TestsDiv2 > div:nth-of-type(2) > a > img{
+#TestsDiv2 > div:nth-of-type(2) > a > img,
+#TestsDiv2 > div:nth-of-type(3) > a > img{
 	width: 151px;
 	margin: 10px;
 }
+
+#uncompleted{
+    filter:grayscale(100%) brightness(0.1);
+}
+
 
 #milestones div:nth-child(5) div:nth-child(3) img,
 #milestones div:nth-child(3) div:nth-child(3) img{
@@ -362,6 +364,10 @@ h2 {
 #uncompleted,
 #genre div:nth-child(6) img:nth-child(n+2){
 	transition: none !important;
+}
+
+#uncompleted{
+	filter: grayscale(100%);
 }
 
 #uncompleted:hover,
