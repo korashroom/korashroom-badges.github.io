@@ -365,10 +365,6 @@ h2 {
 	transition: none !important;
 }
 
-#uncompleted{
-	filter: grayscale(100%);
-}
-
 #uncompleted:hover,
 #genre div:nth-child(6) img:nth-child(n+2):hover{
 	transform: none !important;
@@ -580,8 +576,9 @@ h2 > a > img:hover {
 #milestones div:nth-child(3) div:nth-child(3) img:hover,
 #milestones div:nth-child(5) div:nth-child(3) img:hover,
 #milestones div:nth-child(4) div:nth-child(3) img:hover,
-#TestsDiv2 > div > a > img:hover{
-	transform: scale(1.1);
+#TestsDiv2 > div > a > img:hover,
+#completed img:hover{
+	transform: scale(1.1) !important;
 }
 
 #milestones div:nth-child(3) div:nth-child(3) img:hover:nth-child(n+9),
