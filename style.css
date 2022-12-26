@@ -256,7 +256,6 @@ h2 {
     padding: 1px;
 }
 
-#uncompleted,
 #genre div:nth-child(6) div img,
 #milestones div:nth-child(3) div:nth-child(3) img:nth-child(n+9),
 #milestones div:nth-child(5) div:nth-child(3) img:nth-child(n+6){
@@ -264,7 +263,7 @@ h2 {
 }
 
 #completed{
-  filter: brightness(1);
+  filter: brightness(1) !important;
 }
 
 #genre table {
@@ -311,7 +310,7 @@ h2 {
 }
 
 #uncompleted{
-    filter:grayscale(100%) brightness(0.1);
+    filter: grayscale(100%) brightness(0.3);
 }
 
 
