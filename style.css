@@ -360,15 +360,6 @@ h2 {
 	padding-right: 200px;
 }
 
-#uncompleted,
-#genre div:nth-child(6) img:nth-child(n+2){
-	transition: none !important;
-}
-
-#uncompleted:hover,
-#genre div:nth-child(6) img:nth-child(n+2):hover{
-	transform: none !important;
-}
 
 #favorites div:first-child div img,
 #events div:first-child div a img,
@@ -547,7 +538,6 @@ h2 > a > img:hover {
 }
 
 #TestsDiv > div > a > img,
-#TestsDiv2 a:nth-child(n+2) img,
 #TestsDiv3 a:nth-child(n+2) img,
 #genre div:nth-child(4) img,
 #genre table img,
@@ -557,26 +547,23 @@ h2 > a > img:hover {
 #events div:first-child div a img,
 #milestones div:nth-child(2) div:nth-child(3) img,
 #milestones div:first-child div img,
-#milestones div:nth-child(3) div:nth-child(3) img,
+#milestones div:nth-child(3) div:nth-child(3) img:nth-of-type(-n+9),
 #milestones div:nth-child(4) div:nth-child(3) img,
-#milestones div:nth-child(5) div:nth-child(3) img{
+#milestones div:nth-child(5) div:nth-child(3) img:nth-of-type(-n+5){
 	transition: all .6s ease-in-out;
 }
 
 #TestsDiv > div > a > img:hover,
 #TestsDiv3 a:nth-child(n+2) img:hover,
-#genre div:nth-child(4) img:hover,
-#genre table img:hover,
-#genre div:nth-child(6) div img:hover,
+#completed:hover,
 #genre div:nth-child(7) div img:hover,
 #favorites div:first-child div img:hover,
 #events div:first-child div a img:hover,
 #milestones div:first-child div img:hover,
 #milestones div:nth-child(2) div:nth-child(3) img:hover,
-#milestones div:nth-child(3) div:nth-child(3) img:hover,
-#milestones div:nth-child(5) div:nth-child(3) img:hover,
+#milestones div:nth-child(3) div:nth-child(3) img:nth-of-type(-n+9):hover,
+#milestones div:nth-child(5) div:nth-child(3) img:nth-of-type(-n+5):hover,
 #milestones div:nth-child(4) div:nth-child(3) img:hover,
-#TestsDiv2 > div > a > img:hover,
 #completed img:hover{
 	transform: scale(1.1) !important;
 }
